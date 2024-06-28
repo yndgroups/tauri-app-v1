@@ -1,0 +1,30 @@
+@import '../../assets/css/variable';
+@import './reset.scss';
+
+.f {
+  &l {
+    float: left;
+  }
+  &r {
+    float: right;
+  }
+}
+
+.pd {
+  &-r5 {
+    padding-right: 5px;
+  }
+}
+
+.mg {
+  &-r5 {
+    margin-right: 5px;
+  }
+}
+
+.cm-editor {
+  overflow-y: auto !important;
+  height: auto !important;
+  font-family: var(--bs-font-monospace);
+  min-height: 200px;
+}

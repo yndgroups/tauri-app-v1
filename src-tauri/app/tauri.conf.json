@@ -1,0 +1,169 @@
+{
+  "build": {
+    "beforeDevCommand": "",
+    "beforeBuildCommand": "pnpm build:all",
+    "devPath": "http://localhost:1420",
+    "distDir": "../../dist"
+  },
+  "package": {
+    "productName": "palm",
+    "version": "0.0.1"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true,
+        "execute": true,
+        "sidecar": true,
+        "scope": [
+          { "name": "sidecar", "sidecar": true },
+          { "name": "echo", "cmd": "echo", "args": true },
+          { "name": "cd", "cmd": "cd", "args": true },
+          { "name": "pnpm", "cmd": "pnpm", "args": true },
+          { "name": "npm", "cmd": "npm", "args": true },
+          { "name": "npm.cmd", "cmd": "npm.cmd", "args": true },
+          { "name": "git", "cmd": "git", "args": true },
+          { "name": "ls", "cmd": "ls", "args": true },
+          { "name": "pwd", "cmd": "pwd", "args": true },
+          { "name": "cat", "cmd": "cat", "args": true },
+          { "name": "chattr", "cmd": "chattr", "args": true },
+          { "name": "chgrp", "cmd": "chgrp", "args": true },
+          { "name": "chmod", "cmd": "chmod", "args": true },
+          { "name": "chown", "cmd": "chown", "args": true },
+          { "name": "cksum", "cmd": "cksum", "args": true },
+          { "name": "cmp", "cmd": "cmp", "args": true },
+          { "name": "diff", "cmd": "diff", "args": true },
+          { "name": "diffstat", "cmd": "diffstat", "args": true },
+          { "name": "file", "cmd": "file", "args": true },
+          { "name": "find", "cmd": "find", "args": true },
+          { "name": "git", "cmd": "git", "args": true },
+          { "name": "gitview", "cmd": "gitview", "args": true },
+          { "name": "indent", "cmd": "indent", "args": true },
+          { "name": "cut", "cmd": "cut", "args": true },
+          { "name": "ln", "cmd": "ln", "args": true },
+          { "name": "less", "cmd": "less", "args": true },
+          { "name": "locate", "cmd": "locate", "args": true },
+          { "name": "lsattr", "cmd": "lsattr", "args": true },
+          { "name": "mattrib", "cmd": "mattrib", "args": true },
+          { "name": "mc", "cmd": "mc", "args": true },
+          { "name": "mdel", "cmd": "mdel", "args": true },
+          { "name": "mdir", "cmd": "mdir", "args": true },
+          { "name": "mktemp", "cmd": "mktemp", "args": true },
+          { "name": "more", "cmd": "more", "args": true },
+          { "name": "mmove", "cmd": "mmove", "args": true },
+          { "name": "mread", "cmd": "mread", "args": true },
+          { "name": "mren", "cmd": "mren", "args": true },
+          { "name": "mtools", "cmd": "mtools", "args": true },
+          { "name": "mtoolstest", "cmd": "mtoolstest", "args": true },
+          { "name": "mv", "cmd": "mv", "args": true },
+          { "name": "od", "cmd": "od", "args": true },
+          { "name": "paste", "cmd": "paste", "args": true },
+          { "name": "patch", "cmd": "patch", "args": true },
+          { "name": "rcp", "cmd": "rcp", "args": true },
+          { "name": "rm", "cmd": "rm", "args": true },
+          { "name": "slocate", "cmd": "slocate", "args": true },
+          { "name": "split", "cmd": "split", "args": true },
+          { "name": "tee", "cmd": "tee", "args": true },
+          { "name": "tmpwatch", "cmd": "tmpwatch", "args": true },
+          { "name": "touch", "cmd": "touch", "args": true },
+          { "name": "umask", "cmd": "umask", "args": true },
+          { "name": "which", "cmd": "which", "args": true },
+          { "name": "cp", "cmd": "cp", "args": true },
+          { "name": "whereis", "cmd": "whereis", "args": true },
+          { "name": "mcopy", "cmd": "mcopy", "args": true },
+          { "name": "mshowfat", "cmd": "mshowfat", "args": true },
+          { "name": "rhmask", "cmd": "rhmask", "args": true },
+          { "name": "scp", "cmd": "scp", "args": true },
+          { "name": "awk", "cmd": "awk", "args": true },
+          { "name": "read", "cmd": "read", "args": true },
+          { "name": "updatedb", "cmd": "updatedb", "args": true }
+        ]
+      },
+      "app": {
+        "all": true
+      },
+      "path": {
+        "all": true
+      },
+      "fs": {
+        "scope": ["$APPDATA/databases/*", "$HOME/*", "$HOME/**", "$HOME/.palm/**"],
+        "all": true,
+        "readFile": true,
+        "writeFile": true,
+        "readDir": true,
+        "copyFile": true,
+        "createDir": true,
+        "removeDir": true,
+        "removeFile": true,
+        "renameFile": true,
+        "exists": true
+      },
+      "dialog": {
+        "all": true,
+        "ask": true,
+        "confirm": true,
+        "message": true,
+        "open": true,
+        "save": true
+      },
+      "window": {
+        "all": true,
+        "create": true,
+        "center": true,
+        "requestUserAttention": true,
+        "setResizable": true,
+        "setTitle": true,
+        "maximize": true,
+        "unmaximize": true,
+        "minimize": true,
+        "unminimize": true,
+        "show": true,
+        "hide": true,
+        "close": true,
+        "setDecorations": true,
+        "setAlwaysOnTop": true,
+        "setContentProtected": true,
+        "setSize": true,
+        "setMinSize": true,
+        "setMaxSize": true,
+        "setPosition": true,
+        "setFullscreen": true,
+        "setFocus": true,
+        "setIcon": true,
+        "setSkipTaskbar": true,
+        "setCursorGrab": true,
+        "setCursorVisible": true,
+        "setCursorIcon": true,
+        "setCursorPosition": true,
+        "setIgnoreCursorEvents": true,
+        "startDragging": true,
+        "print": true
+      },
+      "protocol": {
+        "asset": true,
+        "assetScope": ["**"]
+      }
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "com.tauri.build",
+      "icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.icns", "icons/icon.ico"]
+    },
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "resizable": true,
+        "title": "palm",
+        "width": 1366,
+        "height": 768,
+        "url": "index.html"
+      }
+    ]
+  }
+}

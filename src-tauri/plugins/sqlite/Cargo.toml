@@ -1,0 +1,18 @@
+[package]
+name = "sqlite"
+version = "0.0.1"
+authors = [ "You" ]
+description = ""
+edition = "2021"
+rust-version = "1.60"
+exclude = ["/examples"]
+
+
+[dependencies]
+tauri = { workspace = true}
+serde = { workspace = true, features = ["derive"] }
+serde_json =  { workspace = true }
+rusqlite = { version = "0.29.0", features = ["bundled"] }
+thiserror = { workspace = true }
+anyhow = { workspace = true }
+common = { path = "../../common"}
